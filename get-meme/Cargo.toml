@@ -1,0 +1,10 @@
+[package]
+name = "get-meme"
+version = "1.0.0"
+edition = "2021"
+description = "You are right, but..... 你说得对，但是...."
+authors = ["Vincent-the-gamer"]
+
+[dependencies]
+rand = "0.8.5"
+serde_json = "1.0.109"

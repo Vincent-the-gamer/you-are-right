@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你说得对</title>
+     <script type="module">
+        import init, { meme } from "./wasm/pkg/wasm.js"
+
+        function switchMeme(){
+            init().then(() => {
+                const content = document.getElementById("content")
+                content.innerText = meme()
+            })
+        }
+
+        switchMeme()
+    </script>
+</head>
+<body>
+    <h1>刷新页面切换发疯文学</h1>
+    <h3 id="content"></h3>
+</body>
+
+</html>
