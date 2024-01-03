@@ -25,3 +25,14 @@
 
 # 后面
 关注永雏塔菲喵~，关注永雏塔菲谢谢喵~
+
+# WebAssembly构建
+```shell
+cd wasm
+# 需要安装wasm-pack
+wasm-pack build --target web
+```
+
+# 开源许可证
+
+反996许可证: [Anti-996 License 1.0](./LICENSE)

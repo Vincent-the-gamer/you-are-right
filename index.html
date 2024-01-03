@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>你说得对</title>
-     <script type="module">
+    <style>
+        h1, footer > h3 {
+            margin: 0 auto;
+            width: fit-content;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+    <script type="module">
         import init, { meme } from "./wasm/pkg/wasm.js"
 
         function switchMeme(){
@@ -20,6 +32,12 @@
 <body>
     <h1>刷新页面切换发疯文学</h1>
     <h3 id="content"></h3>
+    <footer>
+        <h3>
+            <a href="https://github.com/Vincent-the-gamer" target="_blank">Anti-996 Licensed V1.0</a>
+            | 2024-present @ Vincent-the-gamer
+        </h3>
+    </footer>
 </body>
 
 </html>
